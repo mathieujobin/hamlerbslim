@@ -8,7 +8,7 @@ This is a simple Rails App that uses one of the [Twitter Bootstrap Samples](http
 
 If you find anything that doesn't add up or you want to investigate any of the open questions, please discuss this on [Hackernews](http://news.ycombinator.com/item?id=4663724) or send me an Issue or Pull Request
 
-
+[my results 2019-09-17](RESULT-2019-09-17.txt)
 
 ## How to setup?
 ```

@@ -1,3 +1,10 @@
+Summary: quite disapointing benchmark.
+method will need to be re-evalued.
+performance with erb/haml/slim/hamlit are very similar
+~350 req/s for webbrick and ~500 for puma
+regardless of the templating engine used
+---->
+
 With Webrick, erb, haml and slim, then haml with hamlit
 
 mathieu:hamlerbslim :-) (master) $ ab -n 1000 -c 1 http://localhost:3000/haml
