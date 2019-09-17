@@ -1,5 +1,5 @@
 Testapp::Application.routes.draw do
-  match '/erb' => "presentation#erb_page"
-  match '/slim' => "presentation#slim_page"
-  match '/haml' => "presentation#haml_page"
+  get '/erb' => "presentation#erb_page"
+  get '/slim' => "presentation#slim_page"
+  get '/haml' => "presentation#haml_page"
 end

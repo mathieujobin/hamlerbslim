@@ -15,10 +15,24 @@ If you find anything that doesn't add up or you want to investigate any of the o
 git clone https://github.com/klaustopher/hamlerbslim.git
 cd hamlerbslim
 bundle
-rails server >/dev/null 2>/dev/null
+SECRET_KEY_BASE=$(date '+%s') rails server -e production >/dev/null 2>/dev/null
 ```
 
-To get the numbers, use [AB (Apache Benchmark)](http://httpd.apache.org/docs/2.2/programs/ab.html) 
+## With hamlit
+```
+export USE_HAMLIT=true
+bundle
+SECRET_KEY_BASE=$(date '+%s') rails server -e production >/dev/null 2>/dev/null
+```
+
+### Use puma
+```
+export USE_PUMA=true
+bundle
+SECRET_KEY_BASE=$(date '+%s') rails server -e production >/dev/null 2>/dev/null
+```
+
+To get the numbers, use [AB (Apache Benchmark)](http://httpd.apache.org/docs/2.2/programs/ab.html)
 
 ```
 ab -n 1000 -c 1 http://localhost:3000/erb
@@ -89,17 +103,17 @@ Time per request:       20.902 [ms] (mean, across all concurrent requests)
 Transfer rate:          301.82 [Kbytes/sec] received
 ```
 
-  
-  
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
